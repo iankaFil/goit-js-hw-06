@@ -11,8 +11,9 @@ const listEl = document.querySelector('#ingredients');
 const item = ingredients.forEach(ingredient => {
   let list = document.createElement('li');
   list.classList.add('item');
-  list.innerHTML = ingredient;
+  list.textContent = ingredient;
   listEl.append(list);
+
 })
 
 console.log(listEl)
