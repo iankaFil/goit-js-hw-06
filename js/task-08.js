@@ -12,6 +12,9 @@ function handleSumbit(event) {
         return alert("Please fill the all fields")
     }
 
-    console.log(`Email: ${email.value}, Password:${password.value}`)
+    const userValues = { email: email.value, password: password.value }
+
+    console.log(userValues)
+
     event.currentTarget.reset()
 }
